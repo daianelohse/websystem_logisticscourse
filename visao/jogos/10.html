@@ -1,0 +1,147 @@
+<!-- Desafio -->
+<div id="areaJogoDesafio" class="centralizar">
+   
+    <p class="primeiroParagrafoJogo text-justify">
+    Consiste em questões para colocar a cabeça para funcionar.
+    </p>
+    
+    <div class="perguntasInput">
+    	<p><strong>1)</strong> O operador de empilhadeira precisa levar os produtos A, B e
+    	C do depósito para a fábrica. O problema é que só pode transportar um produto por
+    	vez e não pode deixar o produto A junto com o C, e nem pode deixar o produto
+    	A junto com o B. <br/>
+    	O que ele deve fazer ? </p>
+    
+    <textarea name="atividades" rows="3" class="form-control" tabindex="1"></textarea>
+    </div>
+    
+    <div class="perguntasInput">
+    <p><strong>2) </strong>O caminhão 1 sai da cidade &quot;A&quot; em direção a
+    cidade &quot;B&quot;, que ficam distantes 500 km, a uma velocidade de 100 km/hora.<br>
+    Depois de 2 horas, o caminhão 2 sai da cidade &quot;B&quot; em direção a cidade
+    &quot;A&quot;, a 80 km/hora.<br />
+    Em que km da estrada vão se encontrar ?</p>
+    
+    <textarea name="atividades" rows="3" class="form-control" tabindex="2"></textarea>
+   
+    <div class="perguntasInput">
+    <p><strong>3) </strong>A transportadora BQY tem na sua frota 10 caminhões a menos que a
+    transportadora DZR, que tem na sua frota 10 caminhões a menos que a transportadora JXN. A
+    transportadora JXN tem na sua frota o dobro de caminhões em relação a transportadora
+    BQY.<br/>
+    Quantos caminhões tem cada transportadora ?</p>
+    <textarea name="atividades" rows="3" class="form-control" tabindex="3"></textarea>
+    </div>
+
+   
+    <h4 class="respostasJogos">Respostas</h4>
+    
+    <ul class="listaSemEstilo">
+    
+    <li><strong>1)</strong> Terá que transportar o produto A até a fábrica. Voltar vazio ao
+    depósito. Levar o produto B até a fábrica. Voltar com o produto A para o depósito.
+    Levar o produto C para a fábrica e voltar vazio para o depósito. Por último, levar o
+    produto A para a fábrica.</li>
+    
+    <li>
+    <strong>2) </strong>Resposta - 366,67 km
+    
+   <!-- Explicação A -->
+    <h5>Explicação A</h5>
+    
+    <p>Fórmula de física : s = so + vt</p>
+    
+    <pre>
+   Dados: so1 = 0 ; so2 = 500 ; v1 = 100km/h ; v2 = - 80 km/h (sentido contrário) ; t1 = t ; 
+          t2 = t1 - 2 = t -2 ; s1 = s2;
+    
+	  s1 = 0 + 100 t = 100t
+	  s2 = 500 - 80 (t-2) = 500 - 80t + 160 = 660 - 80t
+	  s1 = s2
+	  100t = 660 - 80t
+	  180t = 660
+	  t = 660/180 = 3,6667
+	 
+	  s1 = 100t 
+	  s1 = 100 x 3,6667 
+	  s1 = 366,67 km
+    
+    </pre>
+    
+    <!-- Explicação B -->
+    <h5>Explicação B</h5>
+    
+   
+    <p>Considerando Espaço = tempo * velocidade temos:</p>
+    
+    <div class="table-responsive">
+    <table class="table table-bordered table-condensed">
+    	<tr>
+    			<th></th>
+    			<th>Caminhão 1</th>
+    			<th>Caminhão 2</th>
+    			<th>Saldo de KM</th>
+    		</tr>
+    		
+    		
+    		<tr>
+    			<td>1º hora</td>
+    			<td>100</td>
+    			<td>0</td>
+    			<td>400</td>
+    		</tr>
+    		
+    		<tr>
+    			<td>2º hora</td>
+    			<td>200</td>
+    			<td>0</td>
+    			<td>300</td>
+    		</tr>
+			
+			<tr>
+    			<td>3º hora</td>
+    			<td>300</td>
+    			<td>80</td>
+    			<td>120</td>
+    		</tr>  
+    		
+    		<tr>
+    			<td>4º hora</td>
+    			<td>400</td>
+    			<td>160</td>
+    			<td>-60</td>
+    		</tr>    	
+    	
+    </table>
+    </div>
+    
+  
+    
+    <p>Como podemos verificar os dois se encontram entre a 3ª e a 4ª hora visto que na 4ª hora completa seriam percorridos mais de 500 km.<br/>
+       Logo na 3ª hora ainda faltariam 120 km. Como ao se encontrarem eles andaram pelo mesmo tempo, visto que tempo = espaço / velocidade temos:<br/>
+      Se caminhão 1 percorre X km o caminhão 2 percorreria a diferença do total, ou seja 120 -X, igualando-se os tempos </p>
+    
+    
+	<pre>
+	
+	X/100 = (120-X)/80   ou  <span class="underline"> X </span>    =  <span class="underline">120 - X</span>
+                                 100          80
+                               
+    
+	    80X  = 12000 - 100X
+	    180X = 12000
+	    X    = <span class="underline">12000</span>
+		    180
+	    X    = 66,67km
+	</pre>
+	
+    <p>Logo como o caminhão 1 já havia percorrido 300 km para encontrar o caminhão 2, percorreu 366,67KM.</p>
+    
+    </li>
+    
+    <li><strong>3) </strong> Transportadora BQY = 20 caminhões; transportadora DZR = 30 caminhões e transportadora JXN = 40 caminhões. 
+    </li>
+    </ul>
+  </div>
+
+</div>

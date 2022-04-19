@@ -1,0 +1,598 @@
+<!-- Palavras Cruzadas -->
+<script>
+    rabiscarLinhasJogo("dicasPalavrasCruzadas", "li");
+</script>
+<style>
+    #dicasPalavrasCruzadas li {
+        cursor: pointer;
+    }
+    </style>
+<div id="areaJogoPalavrasCruzadas" class="centralizar">
+    <p class="primeiroParagrafoJogo">Seguindo a numeração, complete com
+        a palavra correta. Considere igual para este jogo as letras "Ç" e "C".
+    </p>
+    <div class="table-responsive">
+        <table class="table table-condensed table-bordered"
+               id="tableJogoPalavrasCruzadas">
+            <tr>
+                <td class="white"></td>
+                <td class="text-center white"><strong>1</strong></td>
+                <td class="text-center white"><strong>2</strong></td>
+                <td class="text-center white"><strong>3</strong></td>
+                <td class="text-center white"><strong>4</strong></td>
+                <td class="text-center white"><strong>5</strong></td>
+                <td class="text-center white"><strong>6</strong></td>
+                <td class="text-center white"><strong>7</strong></td>
+                <td class="text-center white"><strong>8</strong></td>
+                <td class="text-center white"><strong>9</strong></td>
+                <td class="text-center white"><strong>10</strong></td>
+                <td class="text-center white"><strong>11</strong></td>
+                <td class="text-center white"><strong>12</strong></td>
+                <td class="text-center white"><strong>13</strong></td>
+                <td class="text-center white"><strong>14</strong></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>1</strong></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>2</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>3</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>4</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>5</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>6</strong></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>7</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>8</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>9</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>10</strong></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>11</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>12</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>13</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>14</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>15</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+            <tr>
+                <td class="text-center white"><strong>16</strong></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+                <td class="text-center"><input type="text" name="nota" size="1"
+                                               class="text-center" /></td>
+            </tr>
+        </table>
+    </div>
+    
+     <div class="observacao">
+       * Clique nas palavras que você já conseguiu colocar no quadro do Dominox para rabiscá-las. 
+    </div>
+
+
+    <div id="dicasPalavrasCruzadas">
+        <h4>Horizontal</h4>
+        <ul class="listaSemEstilo">
+            <li>1.2 - Sigla que indica que o material cotado já tem tudo
+                embutido no preço, ou seja, é posto no destino.</li>
+            <li>1.7 - Tecnologia da Informação.</li>
+            <li>1.10 - Autônomo que ajuda o motorista a fazer o carregamento
+                ou descarregamento do caminhão.</li>
+            <li>2.1 - Electronic Data Interchange.</li>
+            <li>2.5 - Associação de logística.</li>
+            <li>3.4 - Equipamento utilizado na movimentação de materiais.</li>
+            <li>3.9 - "........ Load", o mesmo que Carga Unitizada.</li>
+            <li>4.1 - Operador Logístico.</li>
+            <li>4.8 - "Expresso ............" , transportadora com sede no
+                interior de São Paulo.</li>
+            <li>5.1 - Situação que fica na cabine, o operador do guindaste de
+                movimentação de conteiner.</li>
+            <li>5.5 - Tampa metálica que protege o motor de automóvel ou
+                máquina.</li>
+            <li>6.2 - Palavra japonesa que significa melhorias contínuas</li>
+            <li>7.4 - Região do Brasil onde está a sede da Agemar.</li>
+            <li>7.8 - Grupo de Estudos Avançados.</li>
+            <li>7.12 - Grande porção; quantidade; multidão.</li>
+            <li>8.4 - Transporte Marítimo.</li>
+            <li>8.8 - Representante na venda de paletes e caixas de madeira,
+                localizado em São Paulo.</li>
+            <li>9.1 - Utilizada para cobrir a carga na carreta.</li>
+            <li>9.6 - Se diz do transporte marítimo feito na costa de um
+                mesmo país</li>
+            <li>10.2 - Abreviatura de quilômetro.</li>
+            <li>10.5 - Laço apertado feito na corda. É muito utilizado no
+                transporte marítimo e rodoviário.</li>
+            <li>10.8 - Momento que você está fazendo esta palavra cruzada.</li>
+            <li>11.4 - Sigla de Movimentação e Armazenagem de Materiais.</li>
+            <li>11.8 - O que o usuário faz ao ver o canal de conteúdo "Humor"
+                do Guia Log.</li>
+            <li>12.6 - Costuma ter durante uma viagem de navio.</li>
+            <li>13.1 - Tem no canal de "Agenda" do Guia Log.</li>
+            <li>13.11 - Um dos sistemas de elevação de cargas (no plural).</li>
+            <li>14.1 - Local de percurso do transporte marítimo.</li>
+            <li>14.5 - Uma das expressões de dor emitida por um operário que
+                bate o martelo no dedo.</li>
+            <li>14.8 - Rua em italiano.</li>
+            <li>14.13 - Estado do Brasil, onde estão localizados os
+                fornecedores "Freire Logística" e "Paletização O Valmir".</li>
+            <li>15.1 - Local de percurso do transporte aéreo.</li>
+            <li>15.4 - É o mais importante numa fábrica.</li>
+            <li>16.1 - "... Soluções Logísticas", empresa de consultoria,
+                treinamento e projetos de logística.</li>
+            <li>16.7 - Levantar, erguer, fazer subir uma carga.</li>
+            <li>16.12 - Sigla da organização responsável pelos padrões
+                mundiais de documentação, embalagem, rótulos e etiquetagem.</li>
+        </ul>
+
+
+        <h4>Vertical</h4>
+        <ul class="listaSemEstilo">
+            <li>1.2 - Componentes de uma corrente</li>
+            <li>1.11 - Grande empresa de transporte marítimo com sede em
+                Recife.</li>
+            <li>2.1 - Centro de Distribuição.</li>
+            <li>2.4 - Expressão japonesa que significa métodos simples, que
+                servem como a prova de falhas no processo.</li>
+            <li>2.13 - Medida antiga de comprimento, equivalente a 1,10 m.</li>
+            <li>3.9 - Abreviatura de Milha Náutica.</li>
+            <li>3.12 - Sigla do antigo departamento do governo, responsável
+                pelas estradas rodoviárias.</li>
+            <li>4.5 - Tem largura de 5 a 10 cm, sua cor estabelece a
+                capacidade de peso e é usada para içar materiais.</li>
+            <li>5.2 - Local onde os produtos são recebidos, estocados e
+                expedidos.</li>
+            <li>5.13 - Ao se pesar o total subtrai-se a "........",
+                chegando-se assim ao peso da carga.</li>
+            <li>6.2 - Complexo portuário de Pernambuco.</li>
+            <li>6.9 - Conjunto de veículos que seguem juntos para um mesmo
+                destino.</li>
+            <li>7.1 - "... Transportes", transportadora de São Paulo.</li>
+            <li>7.5 - Indica na posição do botão na máquina, que está ligada<./li>
+            <li>7.12 - Estado do Brasil, onde estão localizados os
+                fornecedores "Santalucia Transportes" e "Advocacia Bing & Reis".</li>
+            <li>8.7 - Modelo, miniatura de navio.</li>
+            <li>8.14 - Sigla de Veículo Urbano de Carga.</li>
+            <li>9.2 - O Maior Portal de Logística.</li>
+            <li>10.3 - Abreviatura de Milha Náutica.</li>
+            <li>10.7 - Local que tem como objetivo armazenar cargas com a
+                empilhadeira.</li>
+            <li>10.14 - Sigla da Association of American Railroads (USA)</li>
+            <li>11.3 - Moeda que você precisa para comprar no Japão.</li>
+            <li>11.8 - Local de percurso do transporte marítimo.</li>
+            <li>12.1 - Associação Brasileira de Transportadores
+                Internacionais (Brasil).</li>
+            <li>12.6 - Serviço de escavação nos canais de acesso e áreas de
+                atracação dos portos para manutenção ou aumento da profundidade.</li>
+            <li>13.6 - "Bar ...." em potuguês é Código de Barras.</li>
+            <li>13.12 - Elemento fixo ou desmontável colocado verticalmente
+                sobre um palete e destinado, principalmente a permitir o empilhamento
+                (plural).</li>
+            <li>14.1 - Nome dado a operação de chegada do navio no cais do
+                porto.</li>
+            <li>14.9 - Ato de movimentar cargas com a mão.</li>
+        </ul>
+    </div>
+
+
+    <h4 class="respostasJogos">Resposta</h4>
+
+    <ul class="listaSemEstilo">
+        <li><strong>Horizontal</strong> - CIF, TI, chapa, EDI, Aslog, grua, unit, OP,
+            Limeira, só, capô, kaizen, NE, GEA, ror, TM, All Mad, lona,
+            cabotagem, km, nó, agora, MAM, ri, brisa, eventos, imãs, mar, ai,
+            via, CE, ar, produção, Rae, içar e ISO.</li>
+        <li><strong>Vertical</strong> - elos, Agemar, CD, PokaYoke, vara, NM, DER, cinta,
+            armazém, tara, Suape, comboio, TLA, on, RS, gabari, VUC, Guia de
+            Logística, NM, alto, AAR, Iene, mar, ABTI, dragagem, code, racks,
+            atracar e manuseio.</li>
+    </ul>
+</div>

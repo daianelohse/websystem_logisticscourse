@@ -1,0 +1,152 @@
+<!-- Memória -->
+<script>
+   
+    var idsVerificadasCerto = new Array();
+    function verficaCampo(id, val) {
+        var idVerificacao = id.substring(0, id.length - 1);
+        var index = idsVerificadasCerto.indexOf(id);
+        if (val.toLowerCase() === idVerificacao) {
+            $("#" + id).css("border", "2px solid green");
+            $("#" + id).css("color", "green");
+            $("#" + id).css("text-transform", "uppercase");
+            
+            if (index < 0) {
+                
+            idsVerificadasCerto.push(id);
+            }
+                
+        } else {
+            $("#" + id).css("border", "2px solid red");
+            $("#" + id).css("color", "red");
+            if (index > -1) {
+                 idsVerificadasCerto.splice(index, 1);
+            }
+           
+        }
+        
+        if (idsVerificadasCerto.length == 20) {
+            $("#parabensFimJogo").show();
+        } else {
+            $("#parabensFimJogo").hide();
+        }
+    
+    }
+</script>
+<style>
+    #parabensFimJogo i {
+        color: green;
+        float: left;
+        font-size: 50px;
+        margin-right: 0.4em;
+    }
+
+    #parabensFimJogo p {
+        color: green;
+        font-size: 19px;
+        font-weight: bolder;
+    }
+</style>
+
+<div id="areaJogoMemoria" class="centralizar">
+    <div id="primeiraParteJogo">
+        <p class="primeiroParagrafoJogo">Olhe atentamente por 1 minuto para o quadro abaixo visando decorar onde está posicionada cada par de figura. <br />
+            Depois, clique no botão "começar" para a limpar o quadro. Então, escreva no quandro em branco, onde está cada par de figura.   <br />
+
+
+        <div class="table-responsive">
+            <table id="imagensJogoMemoria" class="table table-bordered table-condensed">
+                <tr>
+                    <td class="text-center"><img src="./dist/img/trem.jpg" class="img-responsive" alt="Trem" /></td>
+                    <td class="text-center"><img src="./dist/img/reuniao.jpg" class="img-responsive" alt="Reunião" /></td>
+                    <td class="text-center"><img src="./dist/img/truck.jpg" class="img-responsive" alt="Truck" /></td>
+                    <td class="text-center"><img src="./dist/img/navio-graneleiro.jpg" class="img-responsive" alt="Navio Graneleiro" /></td>
+                    <td class="text-center"><img src="./dist/img/container.jpg" class="img-responsive" alt="Container" /></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><img src="./dist/img/GuiaLog.jpg" class="img-responsive" alt="Guia Log" /></td>
+                    <td class="text-center"><img src="./dist/img/airplane.jpg" class="img-responsive" alt="Avião" /></td>
+                    <td class="text-center"><img src="./dist/img/cacamba.jpg" class="img-responsive" alt="Caçamba" /></td>
+                    <td class="text-center"><img src="./dist/img/GuiaLog.jpg" class="img-responsive" alt="Guia Log" /></td>
+                    <td class="text-center"><img src="./dist/img/empilhadeira.jpg" class="img-responsive" alt="Empilhadeira" /></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><img src="./dist/img/navio-graneleiro.jpg" class="img-responsive" alt="Navio Graneleiro" /></td>
+                    <td class="text-center"><img src="./dist/img/pallet.jpg" class="img-responsive" alt="Palete" /></td>
+                    <td class="text-center"><img src="./dist/img/container.jpg" class="img-responsive" alt="Container" /></td>
+                    <td class="text-center"><img src="./dist/img/trem.jpg" class="img-responsive" alt="Trem" /></td>
+                    <td class="text-center"><img src="./dist/img/pallet.jpg" class="img-responsive" alt="Palete" /></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><img src="./dist/img/empilhadeira.jpg" class="img-responsive" alt="Empilhadeira" /></td>
+                    <td class="text-center"><img src="./dist/img/truck.jpg" class="img-responsive" alt="Truck" /></td>
+                    <td class="text-center"><img src="./dist/img/reuniao.jpg" class="img-responsive" alt="Reunião" /></td>
+                    <td class="text-center"><img src="./dist/img/cacamba.jpg" class="img-responsive" alt="Caçamba" /></td>
+                    <td class="text-center"><img src="./dist/img/airplane.jpg" class="img-responsive" alt="Avião" /></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <p>Já memorizou ? <br />
+            Se sim, clique no botão abaixo, senão dê mais uma olhada nas imagens.
+        </p>
+        <button class="btn btn-info" type="button" value="comecar" onclick="$('#primeiraParteJogo').hide();
+                $('#segundaParteJogo').show();">COMEÇAR</button>
+    </div>
+
+
+
+    <div id="segundaParteJogo" style="display:none">
+        <p id="paragrafoJogoMemoria">Escreva no quadro abaixo onde estão cada par das figuras: <br />
+            GuiaLog, Navio, Caminhão, Trem, Caçamba, Avião, Palete, Container, Empilhadeira, Consultores.</p>
+
+        <span class="observacao">
+            * A verificação é automática. 
+            Tome cuidado com a acentuação, pois na hora da verificação, é levada em conta a acentuação. 
+            Portanto, "reuniao" é diferente de "reunião".
+        </span>
+
+        <div id="table-responsive">
+            <table id="respostasMemoria" class="table table-bordered table-condensed" >
+                <tr>
+                    <td class="text-center"><input id="trem1" type="text" onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="reunião1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="caminhão1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="navio1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="container1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input id="guialog1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="avião1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="caçamba1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="guialog2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="empilhadeira1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input id="navio2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="palete1" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="container2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="trem2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="palete2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input id="empilhadeira2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="caminhão2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="reunião2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="caçamba2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                    <td class="text-center"><input id="avião2" type="text"  onchange="verficaCampo(this.id, this.value)"></td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <div id="parabensFimJogo" style="display: none">
+            <i class="glyphicon glyphicon-ok-sign"></i>
+            <p> Parabéns! <br />Você provou que tem uma ótima memória e concluiu o jogo com sucesso! :D </p>
+        </div>
+
+
+    </div>
+
+</div>

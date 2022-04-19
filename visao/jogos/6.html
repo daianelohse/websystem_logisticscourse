@@ -1,0 +1,407 @@
+<!-- Caça Palavras -->
+<style>
+    td {
+        cursor: pointer;
+    }
+</style>
+<script>
+    var tdJaSelecionados = new Array();
+
+    $("#tabelaCaca td").click(function () {
+        index = tdJaSelecionados.indexOf(this);
+        if (index < 0) {
+            tdJaSelecionados.push(this);
+            $(this).css("background-color", "#cccccc")
+        } else {
+            tdJaSelecionados.splice(index, 1);
+            $(this).css("background-color", "#ffffff")
+        }
+    });
+
+    rabiscarLinhasJogo("listaDicasCaca", "td");
+</script>
+
+<div id="areaJogoCacaPalavras">
+
+    <div class="centralizar">
+
+
+        <p class="primeiroParagrafoJogo text-justify">
+            O objetivo do jogo é achar as palavras e siglas informadas mais
+            abaixo.<br /> Podem estar dispostas da direita para a esquerda, da
+            esquerda para a direita, de cima para baixo, de baixo para cima, de
+            forma inclinada para qualquer um dos lados.<br /> 
+            
+           <span class="observacao">* Clique em cada letra da palavra/sigla que for achando na tabela para destacá-la. <br />
+               * Clique nas palavras e siglas que for achando para rabiscá-las.</span>
+        </p>
+        <div id="tabelaCaca" class="table-responsive">
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td class="text-center">A</td>
+                    <td class="text-center">V</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">P</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">X</td>
+                    <td class="text-center">V</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">K</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">A</td>
+                </tr>
+                <tr>
+                    <td class="text-center">I</td>
+                    <td class="text-center">J</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">Q</td>
+                    <td class="text-center">U</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">F</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">Q</td>
+                    <td class="text-center">U</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">U</td>
+                    <td class="text-center">F</td>
+                    <td class="text-center">S</td>
+                </tr>
+                <tr>
+                    <td class="text-center">V</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">Q</td>
+                    <td class="text-center">U</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">H</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">Z</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">E</td>
+                </tr>
+                <tr>
+                    <td class="text-center">L</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">B</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">D</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">W</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">O</td>
+                </tr>
+                <tr>
+                    <td class="text-center">O</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">V</td>
+                    <td class="text-center">D</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">U</td>
+                    <td class="text-center">Q</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">U</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">K</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">D</td>
+                </tr>
+                <tr>
+                    <td class="text-center">P</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">X</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">P</td>
+                    <td class="text-center">G</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">B</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">R</td>
+                </tr>
+                <tr>
+                    <td class="text-center">M</td>
+                    <td class="text-center">G</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">Z</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">D</td>
+                    <td class="text-center">L</td>
+                    <td class="text-center">Z</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">G</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">P</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">O</td>
+                </tr>
+                <tr>
+                    <td class="text-center">T</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">V</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">Z</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">J</td>
+                    <td class="text-center">X</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">B</td>
+                    <td class="text-center">N</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">L</td>
+                    <td class="text-center">L</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">B</td>
+                </tr>
+                <tr>
+                    <td class="text-center">A</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">P</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">W</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">P</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">P</td>
+                    <td class="text-center">V</td>
+                    <td class="text-center">I</td>
+                </tr>
+                <tr>
+                    <td class="text-center">V</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">G</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">U</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">J</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">T</td>
+                </tr>
+                <tr>
+                    <td class="text-center">A</td>
+                    <td class="text-center">B</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">K</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">H</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">D</td>
+                    <td class="text-center">S</td>
+                </tr>
+                <tr>
+                    <td class="text-center">P</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">U</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">X</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">L</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">L</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">E</td>
+                </tr>
+                <tr>
+                    <td class="text-center">P</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">Z</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">W</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">L</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">W</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">V</td>
+                    <td class="text-center">T</td>
+                </tr>
+                <tr>
+                    <td class="text-center">C</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">W</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">C</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">M</td>
+                    <td class="text-center">B</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">I</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">E</td>
+                </tr>
+                <tr>
+                    <td class="text-center">P</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">H</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">K</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">O</td>
+                    <td class="text-center">D</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">T</td>
+                    <td class="text-center">S</td>
+                    <td class="text-center">A</td>
+                    <td class="text-center">R</td>
+                    <td class="text-center">E</td>
+                    <td class="text-center">S</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table id="listaDicasCaca" class="table table-condensed">
+                <tr>
+                    <td>ARMAZEM</td>
+                    <td>COMBOIO</td>
+                    <td>MEZANINO</td>
+                    <td> PPCP</td>
+                </tr>
+                <tr>
+                    <td>BALSA</td>
+                    <td>ESTIBORDO</td>
+                    <td> DOMETRO</td>
+                    <td>RASTREADOR</td>
+                </tr>
+                <tr>
+                    <td>CABOTAGEM</td>
+                    <td>ESTOQUE</td>
+                    <td>OTM</td>
+                    <td>ROTEIRIZADOR</td>
+                </tr>
+                <tr>
+                    <td>CAPATAZIA</td>
+                    <td>INVENTARIO</td>
+                    <td>PEPS</td>
+                    <td>SILO</td>
+                </tr>
+                <tr>
+                    <td>CIF</td>
+                    <td>KAIZEN</td>
+                    <td>PORTO</td>
+                    <td>TRANSBORDO</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,659 @@
+<!-- Dominox -->
+
+<script>
+    rabiscarLinhasJogo("dicasDominox", "li");
+</script>
+<style>
+   
+
+    .dominoxLeft {
+        float:left;
+    }
+    .dominoxRight {
+        float:right;
+        margin-right: 7em;
+    }
+
+    .palavrasDominox {
+        height:15em;
+        border:1px solid #ccc;
+    }
+
+    .palavrasDominox ul li {
+        list-style: outside none none;
+         cursor: pointer;
+    }
+
+    #areaJogoDominox h5 {
+        font-weight: bolder;
+    }
+</style>
+
+<div id="areaJogoDominox" class="centralizar">
+    <p class="primeiroParagrafoJogo">Com as palavras abaixo, tente encaixar todas no quadro.</p>
+
+    <div class="table-responsive">
+        <table id="tabelaUmDominox" class="table table-bordered table-condensed">
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">C</td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">O</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="celulasEspeciais">D</td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">I</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">G</td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="celulasEspeciais">O</td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">D</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">E</td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">B</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">A</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">R</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">T</td>
+                <td class="celulasEspeciais">R</td>
+                <td class="celulasEspeciais">A</td>
+                <td class="celulasEspeciais">N</td>
+                <td class="celulasEspeciais">S</td>
+                <td class="celulasEspeciais">P</td>
+                <td class="celulasEspeciais">O</td>
+                <td class="celulasEspeciais">R</td>
+                <td class="celulasEspeciais">T</td>
+                <td class="celulasEspeciais">E</td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="celulasEspeciais">A</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+            </tr>
+            <tr>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="celulasEspeciais">S</td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+            </tr>
+            <tr>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"> <input type="text" name="nota" class="text-center" size="1"> </td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+                <td class="text-center"><input type="text" name="nota" class="text-center" size="1"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="observacao">
+       * Clique nas palavras que você já conseguiu colocar no quadro do Dominox para rabiscá-las. 
+    </div>
+
+    <div id="dicasDominox" class="table table-bordered table-condensed">
+
+        <div class="palavrasDominox col-md-4">
+            <h5>3 letras</h5>
+            <ul>
+                <li>TEU</li>         
+                <li>ISO</li>
+                <li>OTM</li>
+                <li>CIF</li>
+                <li>FOB</li>
+                <li>EDI</li>
+            </ul>
+        </div>
+
+
+        <div class="palavrasDominox col-md-4">
+            <h5>4 letras</h5>
+            <ul class="dominoxLeft">
+                <li>grua</li>           
+                <li>PEPS</li>         
+                <li>AGVs</li>          
+                <li>silo </li>            
+                <li>CTRC</li> 
+                <li>pneu</li> 
+            </ul>
+            <ul class="dominoxRight">
+                <li>seal</li> 
+                <li>ANTT</li> 
+                <li>trem</li> 
+            </ul>
+        </div>
+
+
+        <div class="palavrasDominox col-md-4">
+            <h5>5 Letras</h5>
+            <ul>
+                <li>selos</li> 
+                <li>balsa</li>
+                <li>rodas</li>   
+                <li>sider</li>
+                <li>tempo</li> 
+                <li>mares</li>
+                <li>baias</li>   
+            </ul>
+        </div>
+
+        <div class="palavrasDominox col-md-4">
+            <h5>6 letras</h5>
+            <ul>
+                <li>postos</li>
+                <li>diesel</li>
+            </ul>
+        </div>
+
+
+        <div class="palavrasDominox col-md-4">
+            <h5>7 letras</h5>
+            <ul class="dominoxLeft">
+                <li>courier</li>          
+                <li>seguros  </li>       
+                <li>barcaça </li>       
+                <li>rebolos </li>        
+                <li>amarras</li>       
+                <li>monovia</li>  
+            </ul>
+            <ul class="dominoxRight">
+                <li>carreta</li>
+                <li>rodovia</li> 
+                <li>dryport</li> 
+                <li>estrada</li>
+                <li>cidades</li>
+                <li>omboio</li> 
+            </ul>
+        </div>
+
+        <div class="palavrasDominox col-md-4">
+            <h5>8 Letras</h5>
+            <ul>
+                <li>romaneio</li> 
+                <li>elevador</li>
+                <li>dragagem</li>   
+                <li>estrados</li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="palavrasDominox col-md-4">
+            <h5>9 letras</h5>
+            <ul>
+                <li>cabotagem</li>
+                <li>dormentes</li>
+                <li>logística</li>
+                <li> prestador</li>
+                <li>motorista</li>
+            </ul>
+        </div>
+
+        <div class="palavrasDominox col-md-4">
+            <h5>10 Letras</h5>
+            <ul>
+                <li style="text-decoration:line-through">transporte</li>
+            </ul>
+        </div>
+
+
+        <div class="palavrasDominox col-md-4">
+            <h5>14 Letras</h5>
+            <ul>
+                <li style="text-decoration:line-through">código de barras</li>
+            </ul>
+        </div>
+
+    </div>
+    <br style="clear:both" />
+        <h5 class="respostasJogos">Resposta</h5>
+        <ul class="listaSemEstilo">
+            <li>
+
+                <strong>Na horizontal:</strong> balsa, CTRC, comboio,
+                rodas, EDI, FOB, OTM, logística, rebolos, sider, ANTT, elevador, mares, trem, transporte,
+                PEPS, estrados, pneu, AGVs, grua, dryport, selos, romaneio, rodovia, dragagem, silo e
+                carreta.
+            </li>
+
+            <li>
+                <strong>Na vertical:</strong> barcaça, postos, courier, amarras, seguros, cabotagem, ISO,
+                código de barras, TEU, monovia, seal, diesel, cidades, CIF, prestador, baias, tempo,
+                dormentes, motorista e estrada.
+            </li>
+        </ul>
+        </div>
