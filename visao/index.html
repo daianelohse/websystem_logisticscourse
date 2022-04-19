@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login :: SENAI - Curso Ténico em Lógística</title>
+        <meta charset="utf-8">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+
+        <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="dist/css/geral.css">
+
+        <style>
+            body {
+                background-image:url(dist/img/e.jpg);
+                background-size:cover;
+                background-attachment: fixed;
+                background-position: center center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <section id="cadastrologin">
+
+            <div class="container">    
+                <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+                    <div class="panel panel-info" >
+                        <div class="panel-heading">
+                            <div class="panel-title">Login</div>
+                            <div class="cantoLogin" id="esqueceuSenha"><a href="#" data-target=".modalRedefinirSenha" data-toggle="modal">Esqueceu a senha?</a></div>
+                        </div>     
+
+                        <div class="panel-body" >
+
+
+                            <div id="login-alert"></div>
+
+
+                            <form id="loginform" class="form-horizontal" role="form">
+
+                                <div id="errouserlogin" class="erros"></div>      
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input id="login-username" type="text" class="form-control" name="usuario" value="" placeholder="usuário ou email">                                        
+                                </div>
+
+                                <div id="errosenhalogin" class="erros"></div>      
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input id="login-password" type="password" class="form-control" name="senha" placeholder="senha">
+                                </div>
+
+                                <div id="logar" class="form-group">
+                                    <!-- Botão -->
+                                    <div class="col-sm-12 controls">
+                                        <a id="btn-login" href="#" class="btn btn-success" onclick="logar()">Entrar</a>
+                                        <div id="cadastroInfo" >
+                                            Não tem uma conta? 
+                                            <a href="#" onClick="$('#loginbox').hide();
+                                                    $('#signupbox').show()">
+                                                Cadastre-se aqui
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>                  
+                            </form>     
+                        </div>                     
+                    </div>  
+                </div>
+                <div id="signupbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Cadastro</div>
+                            <div class="cantoLogin"><a id="signinlink" href="#" onclick="$('#signupbox').hide();
+                                    $('#loginbox').show()">Entrar</a></div>
+                        </div>  
+                        <div class="panel-body" >
+
+                            <div id="signup-alert"></div>
+
+                            <form id="signupform" class="form-horizontal" role="form" action="validacaoLogin.php">
+
+                                <div id="erronome" class="erros"></div>
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">Nome</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="nome" class="form-control" name="firstname" placeholder="Nome Completo">
+                                    </div>
+                                </div>
+
+
+                                <div id="errousuario" class="erros"></div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Usuário</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="usuario" class="form-control" name="lastname" placeholder="Usuário">
+                                    </div>
+                                </div>
+
+
+                                <div id="erroemail" class="erros"></div>
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="email" class="form-control" name="email" placeholder="Endereço de email">
+                                    </div>
+                                </div>
+
+
+                                <div id="errosenha" class="erros"></div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Senha</label>
+                                    <div class="col-md-9">
+                                        <input type="password" id="senha" class="form-control" name="passwd" placeholder="Senha">
+                                    </div>
+                                </div>
+
+
+                                <div id="errorepetirSenha" class="erros"></div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Repetir Senha</label>
+                                    <div class="col-md-9">
+                                        <input type="password" id="repetirSenha" class="form-control" name="passwd" placeholder="Repetir Senha">
+                                    </div>
+                                </div>
+                                
+                                <div id="errotipo" class="erros"></div>
+                                <div class="form-group">
+
+                                    <label for="radio" class="col-md-3 control-label">Tipo</label>
+
+                                    <span class="radio col-md-9">
+
+                                        <label class="checkbox-inline"><input type="radio" name="optradio" id="alunoPerm">Aluno</label>
+
+                                        <label class="checkbox-inline"><input type="radio" name="optradio" id="professorPerm">Professor</label>
+                                    </span>
+
+                                </div>
+
+                                <div id="btCadastrarUser" class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-signup" type="button" class="btn btn-info" onclick="cadastrar('cadastrar', null, null)"><i class="icon-hand-right"></i> Cadastrar</button>
+                                    </div>
+                                </div>     
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="responsive" class="modal fade modalRedefinirSenha" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="modalRedefinirSenha">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h3 class="modal-title">Redefinir Senha</h3>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form">
+                                
+                                
+                                <div id="redefinirSenha-alert"></div>
+
+                                
+                                <!--
+                                <div class="input-group">
+                                    <p>Informe o seu usuário ou o e-mail que você cadastrou no seu perfil</p>
+                                    <input id="useremailRedefinir" type="text" class="form-control" name="usuario" value="" placeholder="usuário ou email">                                        
+                                </div>
+                                
+                                -->
+                                
+                                <p> Para redefinir sua senha, entre em contato com o administrador. </p>
+                                
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="botoesModalConfirmacao" style="display: inline">
+                               <!-- <button type="submit" class="btn btn-success" id="confirmarArquivarTurma" onclick="redefinirSenha($('#useremailRedefinir').val())">Ok</button>-->
+                                <button type="submit" class="btn btn-success" data-dismiss="modal">OK</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+        <section id="rodapeCadastrologin"><footer><strong>SENAI</strong> Blumenau - Curso Técnico em Logística</footer></section>
+
+        <script type="text/javascript" src="dist/js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="dist/js/eventos.js"></script>
+        <script type="text/javascript" src="dist/js/eventosCadastroLogin.js"></script>
+    </body>
+</html>

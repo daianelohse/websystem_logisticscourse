@@ -1,0 +1,35 @@
+<div id="gerenciarPermissoes">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <i class="glyphicon glyphicon-wrench"></i> Gerenciar Permissões
+                    <button type="button" class="close" onclick="$('#gerenciarPermissoes').hide();" aria-hidden="true">&times;</button></div>
+                <div class="panel-body">
+                    <ul id="menuPermissao" class="listaSemEstilo">
+                        <li id="pendentesUsuarios" class="menuItemClicado" onclick="abrirGerenciamentoAcesso(null)">Pendentes</li> 
+                        <li class="separadorLink">|</li>
+                        <li id="todosUsuarios" onclick="todosUsuarios(null)">Liberados</li>
+                        <li class="separadorLink">|</li>
+                        <li id="inativosUsuarios" onclick="usuariosInativos(null)">Inativos</li>
+                    </ul>
+                    <div id="grupoPesquisaUsuarios" class="input-group">
+                            <input type="text" placeholder="Digite o nome do usuário e pressione a tecla enter ou clique no botão para pesquisar" id="pesquisarUsuarios" class="form-control">
+                            <span class="input-group-btn">
+                                <button title="Pesquisar" onclick="pesquisarUsuario($('#pesquisarUsuarios').val())" type="button" class="btn btn-info"><i class="glyphicon glyphicon-search"></i></button>
+                                <button title="Limpar pesquisa" onclick="limparPesquisaUsuario()" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                          
+                            </span>
+                        </div>
+                    <div id="listaUsuariosSemPermissao"></div>
+                    <div id="listaTodosUsuarios"></div>
+                    <div id="listaUsuariosInativos"></div>
+
+                </div>	
+            </div>
+        </div>	
+    </div>
+
+</div>
