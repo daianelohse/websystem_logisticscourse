@@ -1,0 +1,212 @@
+.centralizar{width:100%;margin-left:auto;margin-right:auto}
+@media (min-width:780px) {
+.centralizar{width:790px}
+}
+@media (min-width:900px) {
+.centralizar{width:900px}
+}
+@media (min-width:1000px) {
+.centralizar{width:1000px}
+}
+header{background-color:#017338;height:60px;padding:.5em;position:fixed;top:0;width:100%;z-index:1039}
+header .trapezoid-search{margin:0 auto;width:30%;padding:20px;background:#017338;position:relative}
+header .trapezoid-search:after,header .trapezoid-search:before{content:" ";width:0;height:0;position:absolute;top:-47px;background:#017338;z-index:-1;-webkit-transform:rotate(45deg);transform:rotate(45deg);box-shadow:0 0 5px -1px rgba(0,0,0,0.5);width:100px;height:100px}
+header .trapezoid-search:after{right:-50px}
+header .trapezoid-search:before{left:-50px}
+.navbar-brand{margin-top:4px}
+#menu li{margin-top:-55px;color:#fff;list-style:none}
+#menu li:first-child{float:left;margin-left:50px;font-size:10pt}
+#menu li:last-child{float:right}
+#menuDropdown:hover #dropMenu{display:block}
+#dropMenu{min-width:125px}
+#menuTelaMenores{display:none;background-color:#fff}
+#menuTelaMenores li{padding-left:.5em;padding-right:.5em;border-right:1px solid #ccc}
+#menuTelaMenores li:last-child{border-right:1px solid #fff}
+#menuTelaMenores ul{margin-top:2em;margin-left:-1em;background-color:#fff}
+#pesquisaTelasMenores{display:none}
+#inputTelasMenores{display:none}
+#pesquisaTelasMenores .input-group{margin:10px 3px;padding-left:30px}
+@media (max-width: 1000px) {
+#menu li:first-child{display:none}
+#menuDropdown li:first-child{display:inline}
+#solicitacoesAcesso{display:none}
+}
+@media (max-width: 600px) {
+#menuTelaMenores,#menuTelaMenores ul li{display:inline}
+.trapezoid-search{display:none}
+#menu li:last-child{display:none}
+.trapezoid-search input{display:inline}
+#inputTelasMenores,#pesquisaTelasMenores{display:block!important}
+.nAlunos{display:none}
+#bread{margin-top:10em}
+}
+#menuDropdown li{margin-top:0}
+#menuDropdown li:first-child{float:none;margin-left:0;font-size:14px}
+#menuDropdown .btn{padding:0}
+#menuDropdown li:last-child{float:none}
+#menuDropdown #nomeUser{color:#000;padding:9px}
+#menuDropdown .caret{margin:2px}
+#jogos,#controle{margin-top:8em}
+#jogos,#turmas,#alunos,#planoDeAula{margin-bottom:8em}
+.modal-lg{width:90%;margin-left:auto;margin-right:auto}
+.playJogo{font-size:65px}
+#jogoFlash{height:500px}
+#thumbs .modal-backdrop.in{opacity:.9!important}
+#thumbs .modal-content{background-color:#000!important;color:#fff!important}
+#thumbs .close{color:#fff!important;font-size:28px!important;opacity:1!important}
+#thumbs .close:hover{opacity:.4!important;transition:opacity .15s linear 0}
+#thumbs .btn-primary{background-color:#017338!important;position:relative}
+#thumbs .thumbnail img{position:relative}
+#thumbs #hoverJogos{visibility:hidden;display:none;width:200px;height:100px}
+#thumbs .thumbnail:hover img{opacity:.1;transition:opacity .3s linear 0;background-color:red!important;cursor:pointer}
+#thumbs .thumbnail:hover #hoverJogos{visibility:visible;display:block;position:absolute;bottom:0;left:0;text-align:center;width:100%;height:100%;top:23%;vertical-align:middle;font-weight:bolder;font-size:16px;cursor:pointer;color:#017338}
+.rodapeSite{bottom:0;position:fixed;background-color:#017338;width:100%;color:#fff;text-align:center;padding:10px;margin-top:2em}
+.rodapeSite strong{font-style:italic}
+#areaJogoCacaPalavras table:last-child .table > thead > tr > th,#areaJogoCacaPalavras .table > tbody > tr > th,#areaJogoCacaPalavras .table > tfoot > tr > th,#areaJogoCacaPalavras .table > thead > tr > td,#areaJogoCacaPalavras .table > tbody > tr > td,#areaJogoCacaPalavras .table > tfoot > tr > td{border-top:none!important}
+#jogoAreaComecaCom h5,#areaJogoAnagrama h5{font-weight:700}
+.perguntasInput{margin-top:3em}
+#modalJogo p{font-size:12pt}
+.respostasJogos{margin-top:6em}
+.primeiroParagrafoJogo{margin-top:2em}
+.listaSemEstilo{list-style:none}
+#areaJogoCriptograma .listaSemEstilo{font-size:12pt}
+.numerosTabelaCriptograma{font-size:9pt;color:#000}
+#areaJogoCruzado .table-bordered > thead > tr > th,#areaJogoCruzado .table-bordered > tbody > tr > th,#areaJogoCruzado .table-bordered > tfoot > tr > th,#areaJogoCruzado .table-bordered > thead > tr > td,#areaJogoCruzado .table-bordered > tbody > tr > td,#areaJogoCruzado .table-bordered > tfoot > tr > td,#areaJogoCruzado .table > thead > tr > th,#areaJogoCruzado .table > tbody > tr > th,#areaJogoCruzado .table > tfoot > tr > th,#areaJogoCruzado .table > thead > tr > td,#areaJogoCruzado .table > tbody > tr > td,#areaJogoCruzado .table > tfoot > tr > td,#areaJogoCruzado .table-bordered{border:0!important}
+.underline{text-decoration:underline}
+#areaJogoDesafio pre{background-color:#000;color:#fff;border:none;border:0;font-size:12pt;overflow:auto}
+#areaJogoDesafio h5{font-weight:bolder}
+#areaJogoDesafio li{font-size:12pt}
+#areaJogoDesafio .form-control{width:95%!important}
+.celulasEspeciais{color:#000!important;background-color:#fff!important;vertical-align:middle!important;font-weight:bolder!important;text-align:center}
+#tabelaUmDominox .table > thead > tr > th,#tabelaUmDominox .table > tbody > tr > th,#tabelaUmDominox .table > tfoot > tr > th,#tabelaUmDominox .table > thead > tr > td,#tabelaUmDominox .table > tbody > tr > td,#tabelaUmDominox .table > tfoot > tr > td{vertical-align:middle!important}
+#areaJogoFormaPalavra table,.white{background-color:#fff;color:#000}
+#areaJogoIlusaoOtica .img-responsive,#areaJogoErros .img-responsive,#areaJogoMemoria .img-responsive{margin:0 auto!important}
+#areaJogoErros textarea{margin-top:1em}
+#areaJogoErros .perguntasInput{margin-top:4.5em}
+#areaJogoMemoria img{width:150px;height:90px}
+#paragrafoJogoMemoria{}
+#areaJogoSlogan .respostasJogos,#areaJogoToboga .respostasJogos{margin-top:10em}
+#areaJogoToboga a:first-child{color:#99C2FF}
+#areaJogoToboga span{display:block}
+#areaJogoToboga .laranja{background-color:#fff;color:#f90;font-size:16px;font-weight:bolder}
+#cadastrologin #loginbox{margin-top:150px!important}
+#cadastrologin .cantoLogin{float:right;font-size:80%;position:relative;top:-10px}
+#cadastrologin .panel-body{padding-top:30px}
+#cadastrologin .input-group{margin-bottom:25px}
+#cadastroLogin #logar{margin-top:10px}
+#cadastroInfo{padding-top:15px;font-size:85%;text-align:right;float:right}
+#signupbox{display:none;margin-top:50px}
+#cadastrologin .checkbox-inline,#cadastrologin .radio{padding-top:4px!important}
+#cadastrologin .panel-info{border:4px solid #fff}
+#rodapeCadastrologin{bottom:0;width:100%}
+#rodapeCadastrologin footer{text-align:center;color:#fff}
+#rodapeCadastrologin strong{font-style:italic}
+#cadastrologin .panel-heading,#adicionarTurma .panel-heading,#adicionarAluno .panel-heading,#gerenciarPermissoes .panel-heading{background-image:none;color:#fff!important;background-color:#017338}
+#gerenciarPermissoes{margin-top:2em}
+#cadastrologin .panel-info{}
+#cadastrologin .form-control:focus{border-color:#017338;box-shadow:0 1px 1px rgba(0,0,0,0.075) inset,0 0 8px rgba(1,115,56,0.6);outline:0 none}
+.pesquisarJogos:focus{border-color:#fff;box-shadow:0 1px 5px rgba(0,0,0,0.075) inset,0 0 10px rgba(204,204,204,0.8);outline:0 none}
+#esqueceuSenha a,#signinlink{color:#fff}
+#logar .btn-success,#btCadastrarUser .btn-info{background-image:none!important;background-color:#017338!important;border-color:#017338}
+#logar .btn-success:hover,#btCadastrarUser .btn-info:hover{background-color:#015228!important}
+#cadastroInfo a{color:#017338}
+#cadastrologin .glyphicon-user,#cadastrologin .glyphicon-lock{color:#027e3e}
+.erros{color:red;display:none;font-size:85%;line-height:.8;text-align:right}
+#adicionarTurma .erros{margin-top:-2em}
+#signup-alert,#login-alert{display:none}
+#signup-alert .glyphicon-ok,#signup-alert .glyphicon-exclamation-sign,#login-alert .glyphicon-ok,#login-alert .glyphicon-exclamation-sign,#addTurma-alert .glyphicon-ok,#addTurma-alert .glyphicon-exclamation-sign{font-size:15pt;float:right}
+.bordaVermelhaErros{border:1px solid red}
+#loginform .input-group{float:left}
+#turmas .container,#alunos .container,#planoDeAula .container{width:auto}
+#turmas .list-group,#alunos .list-group{font-size:14pt}
+#turmas .nomeTurma,#alunos .nomeAluno,#listaUsuariosSemPermissao .nomeUser,#listaTodosUsuarios .nomeUser,#listaUsuariosInativos .nomeUser{margin-left:1em}
+#pendentesUsuarios,#todosUsuarios,#inativosUsuarios{cursor:pointer}
+#pendentesUsuarios:hover,#todosUsuarios:hover,#inativosUsuarios:hover{text-decoration:underline}
+#turmas #novaTurma,#alunos #inserirAluno,#alunos #btPlanodeAula{background-color:#017338;color:#fff;margin-bottom:1em}
+#turmas #adicionarTurma,#alunos #adicionarAluno,#planoDeAula{display:none}
+#adicionarTurma .close,#adicionarAluno .close{color:#fff;opacity:.5}
+#adicionarTurma .close:hover,#adicionarAluno .close:hover{color:#000}
+#listaUsuariosSemPermissao .glyphicon-user,#listaTurmas .glyphicon-folder-close,#listaAlunos .glyphicon-user{color:#017338}
+#listaTurmas .nAlunos,#listaAlunos .nAlunos,#lstTurmasArquivadas .nAlunos{font-size:11pt;margin-left:1em}
+.emailUser{font-size:12px;margin-left:1em;color:#5C5C5C;font-style:italic}
+.botoesControle{padding-bottom:5em}
+.breadcrumb a{color:#017338}
+.breadcrumb .active{color:#666}
+#adicionarAlunoCheck,#selectProfessores{max-height:300px;overflow-y:auto}
+#adicionarAlunoCheck .checkbox,#selectProfessores .checkbox{background-color:#ddd;margin-bottom:3px;margin-top:3px;padding:8px;color:#000}
+#adicionarAlunoCheck .checkbox:hover,#selectProfessores .checkbox:hover{background-color:#ccc}
+#cadAluno{margin-top:2em}
+#addAluno-alert{display:none}
+#infoAdm .glyphicon-info-sign{font-size:24pt;line-height:inherit}
+#infoAdm{display:none}
+a{cursor:pointer}
+#containerPlanoDeAula{padding-top:2em}
+.titulosPlanoDeAula{margin-bottom:-1.7em;margin-left:2em;padding:0}
+.titulosPlanoDeAula span{background-color:#fff;border:1px solid #ccc;border-radius:.4em;padding:.3em}
+#jogosLiberados,#jogosBloqueados{width:100%;height:auto;padding:2em 1em 1em;margin:1em;border:1px solid #ccc}
+#jogosLiberados{margin-bottom:3em}
+#jogosLiberados .thumbnail{background-color:#5cb85c}
+#jogosBloqueados .thumbnail{background-color:#d44950}
+#jogosLiberados .iconeLiberado{background-color:#fff;border-radius:3em;color:#5cb85c;left:25px;padding:5px;position:absolute;top:10px;border:1px solid #5cb85c}
+#jogosBloqueados .iconeBloqueado{background-color:#fff;border-radius:3em;color:#d44950;left:25px;padding:5px 5px 5px 7px;position:absolute;top:10px;border:1px solid #d44950}
+.verJogo{background-color:#fff;border-radius:6px;bottom:30px;font-size:11px;padding:3px;position:absolute;right:25px;text-transform:uppercase;border:1px solid #000;cursor:pointer}
+.verJogo:hover{background-color:#ccc}
+#jogosLiberados .bloquearJogo{bottom:0;color:#d44950;cursor:pointer;display:block;font-size:75px;font-weight:bolder;height:100%;left:0;position:absolute;text-align:center;top:25%;vertical-align:middle;visibility:hidden;width:100%}
+#jogosBloqueados .liberarJogo{bottom:0;color:#5cb85c;cursor:pointer;display:block;font-size:75px;font-weight:bolder;height:100%;left:0;position:absolute;text-align:center;top:25%;vertical-align:middle;visibility:hidden;width:100%}
+#jogosLiberados > .jogosPlanoDeAula:hover .bloquearJogo{visibility:visible;opacity:1}
+.erro{color:#d44950;font-size:20px}
+#jogosBloqueados > .jogosPlanoDeAula:hover .liberarJogo{visibility:visible;opacity:1}
+#jogosLiberados > .jogosPlanoDeAula:hover .iconeLiberado{display:none}
+#jogosBloqueados > .jogosPlanoDeAula:hover .iconeBloqueado{display:none}
+#jogosLiberados > .jogosPlanoDeAula:hover .thumbnail{background-color:#d44950}
+#jogosBloqueados > .jogosPlanoDeAula:hover .thumbnail{background-color:#5cb85c}
+#gerenciarPermissoes li:hover,#listaAlunos li:hover,#listaTurmas li:hover,#lstTurmasArquivadas li:hover{background-color:#f5f5f5}
+#gerenciarPermissoes li,#listaAlunos li,#listaTurmas li,#lstTurmasArquivadas li{cursor:pointer}
+#gerenciarPermissoes .list-group,#listaAlunos .list-group,#listaTurmas .list-group,#lstTurmasArquivadas .list-group{overflow-y:auto;max-height:400px}
+.iconeUserPermissoes{float:left}
+#listaUsuariosSemPermissao .list-group,#listaTodosUsuarios .list-group,#listaUsuariosInativos .list-group{font-size:14pt}
+#listaUsuariosSemPermissao .radio:first-child,#listaTodosUsuarios .radio:first-child{margin-top:2em}
+#listaUsuariosSemPermissao .radio,#listaTodosUsuarios .radio{margin-left:3em;font-size:12pt}
+.botoesGerenciarPermissao{margin-top:1em;float:right}
+.liberarAcesso{font-size:14px}
+.iconBlue{color:#99C2FF!important}
+.iconBlack{color:#080808!important}
+.confirmarPermissaoUser{font-size:15px;margin-left:1em;font-weight:700}
+.confirmarPermissaoUser strong{text-transform:uppercase}
+.feedBackCadPermissao{color:#027e3e;font-size:14px}
+.menuItemClicado{background-color:#ddd;border-top-left-radius:9px;border-top-right-radius:9px;color:#017338;padding:5px;font-weight:bolder}
+#listaTodosUsuarios li:first-child{border-top:2px solid #ccc}
+.nomeProfessor{margin:1em}
+#solicitacoesAcesso{font-size:16pt;margin-right:1em;cursor:pointer}
+.glyphicon:hover{opacity:.7}
+#solicitacoesAcesso,#nomeUser{vertical-align:middle;color:#fff}
+#nomeUser:hover{opacity:.5}
+#nAcesso{background-color:#000;border-radius:2em;cursor:pointer;font-family:arial;font-size:10pt;font-weight:bolder;margin-left:-.3em;margin-top:600px;padding:.1em .4em}
+#formModal .form-group{margin-right:1em}
+#relatorioTurma-alert,#relatorioAluno-alert,#statusAluno,#statusTurma{display:none}
+#pesqProfBotao .glyphicon{font-style:normal;font-weight:400;line-height:normal;position:inherit;top:0;vertical-align:middle;font-size:16px}
+#pesquisaProfessores{font-size:26px;display:inline-block}
+#professorSelecionado{color:#000;cursor:default;display:inline-block;font-weight:700;height:auto!important;margin:3px;overflow:hidden;padding:3px 5px;background-color:#ddd}
+.token-input-delete-token{padding-left:10px}
+#listaTurmasArquivadas{border-top:1px solid #E6E6E6;border-bottom:1px solid #E6E6E6}
+#listaTurmasArquivadas p{text-align:center;cursor:pointer;padding-top:12px;color:#999}
+#listaTurmasArquivadas p:hover{color:#000}
+#ocultarTurmasArquivadas{cursor:pointer;text-align:right;float:right}
+#editarInformacoesPerfil{margin-right:1em}
+#editarInformacoesPerfilBotoes{margin-right:1em}
+#iconCollapseTurmasArquivadas{color:#000;font-size:16px}
+.mensagemAlertaJogos{font-size:19px;margin-top:40px;padding:70px}
+.usuarioInativo{color:#ccc}
+.usuarioInativo i{font-size:12px}
+.linkAbreModal{margin-top:1em;margin-bottom:1em}
+#abreModalRelatorio{background-color: #017338;border-radius: 2px;color: #fff;margin-bottom: 3px;padding: 4px;}
+#menuPermissao li{display:inline}
+#menuPermissao{padding:0;margin:0;word-spacing:1em}
+.mensagemUsuarioPermissao{margin-top:13px}
+.separadorLink{color:#ccc}
+#observacaoSenhaEditar{color:#737373;display:block;margin-bottom:20px;margin-left:12px}
+#areaJogoRachacuca .observacao,#areaJogoCacaPalavras .observacao,#areaJogoCriptograma .observacao,#areaJogoDominox .observacao,#areaJogoPalavrasCruzadas .observacao,#areaJogoMemoria .observacao{color:#999;font-size:14px}
+#respostasMemoria{margin-top:3em;margin-bottom:3em}
+#respostasMemoria input{text-align:center}
+#respostaNaviosNoPorto img{margin-right:auto;margin-left:auto;width:100%;padding:3em}
+#areaRespostaJojo17{padding:1em}
